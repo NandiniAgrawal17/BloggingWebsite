@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <title>Document</title>
+</head>
+<body>
+
+   {{>navbar}}
+   {{!-- hero section --}}
+   <div class="container-fluid mt-5" id="home">
+       <div class="row">
+           <div class="col-md-10 col-12 mx-auto">
+               <div class="row">
+                   <div class="col-md-6 col-12 hero-text d-flex justify-content-center align-items-start flex-column">
+                       <h1>WE WILL HELP YOU</h1>
+                       <h1>GROW YOUR BUSINESS</h1>
+                       <p>We Are A Team Of <span class="bold-style"> Professional Developers </span></p>
+                       <button class="btn-style btn -primary">Read More</button>
+                   </div>
+                   {{!-- right side --}}
+                   <div class="col-md-6 col-12 hero-text order-md-0 order-1">
+                       <figure>
+                           <img src="images/growth.png" alt="hero section image">
+                       </figure>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+
+    {{!-- about section --}}
+    {{>about}}
+
+    {{!-- services section --}}
+    {{>services}}
+
+    {{!-- map section --}}
+    {{>maps}}
+
+    {{!-- contact section --}}
+    {{>contact}}
+   
+   <script src="../jq/jquery.js" type="text/javascript"></script>
+    <script src="../js/bootstrap.js" type="text/javascript"></script>
+</body>
+</html>
